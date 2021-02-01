@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* *************************************************************************
 *	Name: style.css
-*	Project: Deniel Den ⬩ graphic e web designer
+*	Project: Deniel Den ⬩ Graphic e Web designer
 *   Author: denielden
 *  	Author URI: https://www.linkedin.com/in/denielden
 *	Version: 1.0.0
@@ -297,6 +297,7 @@ ul.social li:last-child { padding-right: 0 }
 [title~=instagram]:hover { color: #d92682; }
 [title~=email]:hover { color: #cc2c28; }
 [title~=whatsapp], [title~=whatsapp]:hover { color: #25d366; }
+.privacy { color: var(--white); font-family: "Poiret One"; }
 #copywrite {
 	text-align: center;
 	padding: .6rem 0 1rem 0;
