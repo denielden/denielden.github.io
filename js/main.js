@@ -22,16 +22,15 @@ function hide_wachat() {
     document.getElementById("wachat").style.display = 'block';
 }
 // navbar
-// var menu = document.getElementById("denNavbar").getElementsByTagName("a");
 function navClose() {
     var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
     var collapseList = collapseElementList.map(function (collapseEl) {
         return new bootstrap.Collapse(collapseEl)
     })
 }
-var els = document.getElementById("denNavbar").getElementsByTagName("a");
-for(var i = 0; i < els.length; i++) {
-    els[i].addEventListener("click", navClose, false);
+var myNavbar = document.getElementById("denNavbar").getElementsByTagName("a");
+for(var i = 0; i < myNavbar.length; i++) {
+    myNavbar[i].addEventListener("click", navClose, false);
 }
 // Lazy Load
 document.addEventListener("DOMContentLoaded", function() {

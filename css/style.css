@@ -50,7 +50,6 @@ img#myComputer {
 	top: 10rem;
 }
 .pt-4r { padding-top: 4rem }
-
 .bg-purple { background-color: var(--purple) !important; color: var(--white); }
 svg.bg-arrow { height: 5rem; }
 #goDown {
@@ -301,11 +300,11 @@ ul.social li:last-child { padding-right: 0 }
 #copywrite {
 	text-align: center;
 	padding: .6rem 0 1rem 0;
-	margin-top: 2.5rem;
+	margin-top: 1rem;
 }
 @media screen and (max-width: 780px) {
 	footer { padding-top: 2rem;}
-	#copywrite { margin-top: 1.5rem; }
+	#copywrite { margin-top: .8rem; }
 }
 
 #ToTop {
