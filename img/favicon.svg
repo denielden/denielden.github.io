@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="denielden_favicon" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+<style type="text/css">
+	.white{fill:#FFFFFF;}
+	.purple{fill:#890052;}
+	.orange{fill:#FF9200;}
+</style>
+<path class="white" d="M27,50l19-19L39.5,2.7C33.1,0.7,30.8,0.3,27,0l-4.8,47.7l-16.9-17l6.2-27.2C17.6,1.6,19.3,1.3,23,1V0  c-3.8,0.3-6.1,0.7-12.5,2.7L4.1,31L23,50l4.9-48.9C31,1.4,33,1.8,38.6,3.5l6.2,27.2L27,48.5V50z"></path>
+<path class="purple" d="M27,50l19-19L39.5,2.7C33.1,0.7,30.8,0.3,27,0l-4.8,47.7l-16.9-17l6.2-27.2C17.6,1.6,19.3,1.3,23,1V0  c-3.8,0.3-6.1,0.7-12.5,2.7L4.1,31L23,50l4.9-48.9C31,1.4,33,1.8,38.6,3.5l6.2,27.2L27,48.5V50z"></path>
+<path class="orange" d="M25,13.1c-1.8,0-3.2,1.4-3.2,3.2v9.5c0,1.8,1.4,3.2,3.2,3.2s3.2-1.4,3.2-3.2v-9.5C28.2,14.5,26.7,13.1,25,13.1z  "></path>
+</svg>
