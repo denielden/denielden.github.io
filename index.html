@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.min.css">
     </head>
-    <body data-bs-spy="scroll" data-bs-target="#denNavbar" data-bs-offset="55" id="chi-sono"> <!--  oncontextmenu="return false;" -->
+    <body data-bs-spy="scroll" data-bs-target="#denNavbar" data-bs-offset="55" oncontextmenu="return false;" id="chi-sono">
         <div id="preload">
             <div class="spinner-grow" role="status"><span class="sr-only"></span></div>
         </div>
@@ -59,7 +59,12 @@
                             <h1 class="text-dark" data-aos="fade-down" data-aos-delay="100">Ciao! Io sono Deniel</h1>
                             <h1 data-aos="fade-down" data-aos-delay="300">Graphic & Web designer</h1>
                             <h1 class="text-dark" data-aos="fade-down" data-aos-delay="500">e consulente del Brand</h1>
-                            <a href="#contattami" class="btn" data-aos="fade-down" data-aos-delay="600">Raccontami la tua idea</a> 
+                            <div class="d-block d-sm-none text-center">
+                                <a href="#ilproblema" class="btn" data-aos="fade-down" data-aos-delay="600">ma come posso fare?</a>
+                            </div>
+                            <div class="d-none d-sm-block">
+                                <a href="#contattami" class="btn" data-aos="fade-down" data-aos-delay="600">Raccontami la tua idea</a>
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <img src="img/denielden.png" class="img-fluid myFace" data-aos="fade-down" data-aos-delay="700" alt="Deniel Den ⬩ Graphic & Web designer e tuo consulente del Brand">
