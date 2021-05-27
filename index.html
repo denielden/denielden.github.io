@@ -1,326 +1,561 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188588877-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());            
-            gtag('config', 'UA-188588877-1');
-        </script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Deniel Den">
-        <title>Deniel Den &bull; Graphic & Web designer</title>
-        <meta name="description" content="Continui a spendere soldi in attività che non funzionano? Nuova Brand Identity e sito web efficace: la combinazione specifica per fare la differenza!">
-        <meta name="keywords" content="Deniel Den, graphic designer, grafico, grafico freelance, brand, branding, logo, consulente grafico, web designer, ux designer, web agency, sito web, sito professionale, sito usabile, marketing, bassano del grappa, bootstrap, wordpress">
-        <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="img/favicon.svg">
-        <link rel=”dns-prefetch” href=”https://fonts.gstatic.com” crossorigin>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" as="style"> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body data-bs-spy="scroll" data-bs-target="#denNavbar" data-bs-offset="55" oncontextmenu="return true;" id="chi-sono">
-        <div id="preload">
-            <div class="spinner-grow" role="status"><span class="sr-only"></span></div>
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-188588877-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-188588877-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Deniel Den">
+    <title>Deniel Den &bull; Graphic & Web designer</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="graphic designer, grafico serio, consulente, brand, branding, brand guideline, marchio, logo, logo fighissimo, logo personalizzato, consulente grafico, concept, brief, preventivo, vision e mission, valori logo, immagine coordinata, web designer, sito web, sito personalizzato, sito professionale, bassano del grappa">
+    <meta name="theme-color" content="#890052">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon.svg">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#denNavbar" id="home">
+    <div id="preload">
+        <div class="spinner-grow" role="status"><span class="sr-only"></span></div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm p-0">
+        <div class="container-md">
+            <a class="navbar-brand" href="#home">
+                <img src="img/logo.svg" alt="Deniel Den &bull; Graphic & Web designer" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#denNavbar" aria-controls="denNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="denNavbar">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#home">chi sono</a>
+                    <a class="nav-link" href="#cosafaccio">cosa faccio</a>
+                    <a class="nav-link" href="#faq">faq</a>
+                    <a class="nav-link" href="#progetti">progetti</a>
+                    <a class="nav-link" href="#recensioni">recensioni</a>
+                    <a class="nav-link" href="#contattami">
+                        <button id="btn-nav">contattami</button>
+                    </a>
+                    <a class="nav-link" href="brand.html">my Brand</a>
+                </div>
+            </div>
         </div>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-purple shadow-sm p-0">
-            <div class="container-md">
-                <a class="navbar-brand" href="#chi-sono">
-                    <img src="img/logo.svg" alt="Deniel Den &bull; Graphic & Web designer" height="50">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#denNavbar" aria-controls="denNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="denNavbar">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#chi-sono">chi sono</a>
-                        <a class="nav-link" href="#problema">problema</a>
-                        <a class="nav-link" href="#soluzione">soluzione</a>
-                        <a class="nav-link" href="#progetti">progetti</a>
-                        <a class="nav-link" href="#recensioni">recensioni</a>
-                        <a class="nav-link" href="#contattami" onclick="gtag('event', 'Contattami', { 'event_category': 'Contattami', 'event_action': 'Nav Contattami' })">
-                            <button id="btn-nav">contattami</button>
-                        </a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container-xl">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6 col-md-7 title">
+                        <h3 data-aos="fade-down">BENVENUTO NEL MIO MONDO</h3>
+                        <h1 class="text-dark" data-aos="fade-down" data-aos-delay="100">Ciao! Io sono Deniel</h1>
+                        <h1 data-aos="fade-down" data-aos-delay="250">Graphic & Web designer</h1>
+                        <h1 class="text-dark" data-aos="fade-down" data-aos-delay="300">e consulente del Brand</h1>
+                        <div class="d-block d-sm-none endiv">
+                            <a href="#contattami" class="btn" data-aos="fade-down" data-aos-delay="400">Raccontami la tua idea</a>
+                        </div>
+                        <div class="d-none d-sm-block">
+                            <a href="#contattami" class="btn" data-aos="fade-down" data-aos-delay="400">Raccontami la tua idea</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/denielden.png" class="img-fluid myFace" data-aos="fade-down" data-aos-delay="500" alt="Deniel Den &bull; Graphic & Web designer e tuo consulente del Brand">
+                    </div>
+                    <a href="#intro" id="goDown" data-aos="fade-down" data-aos-delay="800">
+                        <svg width="20" fill="#890052" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 16.4"><path d="M14.6,7.9c-0.4-0.4-1-0.4-1.4,0l-4.6,4.6V1c0-0.6-0.5-1-1-1s-1,0.5-1,1v11.5L1.9,7.9c-0.4-0.4-1-0.4-1.4,0C0,8.3,0,8.9,0.4,9.3l7.1,7.1l7.1-7.1C15,8.9,15,8.3,14.6,7.9z"></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="intro">
+            <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#fff" points="600 100 0 0 1200 0 600 100"></svg>
+            <div class="container-md pt-fix">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-10 ms-lg-5 ms-sm-normal title">
+                        <div class="card-intro">
+                            <h3 data-aos="fade-down">Basta loghi e design preconfezionati</h3>
+                            <h1 data-aos="fade-down" data-aos-delay="100">Brand personalizzato su misura</h1>
+                            <p class="pt-2" data-aos="fade-down" data-aos-delay="250">Trasmetti ora in modo efficace <strong>la tua personalità e i tuoi valori</strong> ai clienti così da creare con loro una relazione differenziandoti dai concorrenti e diventanto la loro prima scelta.</p>
+                            <ul id="benefit">
+                                <li data-aos="fade-down" data-aos-delay="300">
+                                    <span class="numb">1</span>
+                                    <h2>Briefing</h2>
+                                    <p><a href="#contattami" title="Raccontami la tua idea">Raccontami la tua idea</a>, le tue esigenze e i tuoi obiettivi.</p>
+                                </li>
+                                <li data-aos="fade-down" data-aos-delay="350">
+                                    <span class="numb">2</span>
+                                    <h2>Design esclusivo</h2>
+                                    <p>In base al tuo brief e alla mia analisi ti preparo 1 o 2 <strong>proposte efficaci</strong>.</p>
+                                </li>
+                                <li data-aos="fade-down" data-aos-delay="400">
+                                    <span class="numb">3</span>
+                                    <h2>Consulenza</h2>
+                                    <p>Scelta la soluzione migliore la sviluppo e ti seguo nel tempo.</p>
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#cosafaccio" class="btn" data-aos="fade-down" data-aos-delay="400">Cosa faccio</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
+        </section>
+        <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#890052" points="600 100 0 0 1200 0 600 100"></svg>
 
-        <main>
-            <section id="intro">
-                <div class="container-xl">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-5 col-md-8">
-                            <h3 data-aos="fade-down">BENVENUTO NEL MIO MONDO</h3>
-                            <h1 class="text-dark" data-aos="fade-down" data-aos-delay="100">Ciao! Io sono Deniel</h1>
-                            <h1 data-aos="fade-down" data-aos-delay="300">Graphic & Web designer</h1>
-                            <h1 class="text-dark" data-aos="fade-down" data-aos-delay="500">e consulente del Brand</h1>
-                            <div class="d-block d-sm-none text-center">
-                                <a href="#contattami" class="btn" data-aos="fade-down" data-aos-delay="600">Raccontami la tua idea</a>
-                            </div>
-                            <div class="d-none d-sm-block">
-                                <a href="#contattami" class="btn" data-aos="fade-down" data-aos-delay="600">Raccontami la tua idea</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="img/denielden.png" class="img-fluid myFace" data-aos="fade-down" data-aos-delay="700" alt="Deniel Den &bull; Graphic & Web designer e tuo consulente del Brand">
-                        </div>
-                        <a href="#problema" id="goDown" data-aos="fade-down" data-aos-delay="1000">
-                            <svg width="20" fill="#890052" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 16.4"><path d="M14.6,7.9c-0.4-0.4-1-0.4-1.4,0l-4.6,4.6V1c0-0.6-0.5-1-1-1s-1,0.5-1,1v11.5L1.9,7.9c-0.4-0.4-1-0.4-1.4,0C0,8.3,0,8.9,0.4,9.3l7.1,7.1l7.1-7.1C15,8.9,15,8.3,14.6,7.9z"></svg>
-                        </a>
+        <section id="cosafaccio">
+            <div class="container-md">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 d-none d-sm-block">
+                        <img src="img/myComputer.png" id="myComputer" data-aos="fade-down" alt="Il mio computer &bull; Deniel Den &bull; Graphic & Web designer">
+                    </div>
+                    <div class="col-lg-5">
+                        <h1 data-aos="fade-down">Cosa faccio</h1>
+                        <p data-aos="fade-down" data-aos-delay="100">Sviluppo Brand su misura, siti web usabili e design funzionali ed efficaci che offrono il vantaggio di creare <strong>un’identità unica e originale</strong> trasmettendo una forte personalità e i valori dell'attività. Supporto il cliente nella creazione della propria <strong>Brand Identity</strong> guidandolo e consigliandogli la strada corretta da percorrere.</p>
+                        <img class="img-fluid d-block d-sm-none mt-5 mb-5" src="img/myComputer.png" data-aos="fade-down" alt="Il mio computer &bull; Deniel Den &bull; Graphic & Web designer">
+                        <p data-aos="fade-down" data-aos-delay="200">Per garantire la massima qualità <strong>seleziono e seguo massimo 3 progetti</strong> per volta.</p>
+                        <h2 data-aos="fade-down" data-aos-delay="300">A differenza di molti non uso grafiche preconfezionate.</h2>
+                        <p data-aos="fade-down" data-aos-delay="350">Il problema è più comune di quanto si immagini: per abbassare i prezzi si usano grafiche "stock" create da altri e prive di <strong>valore aggiunto</strong>. Ogni giorno mi ritrovo a dover rifare o sistemare design scontati o malprogettati.</p>
+                        <div class="d-none d-sm-block"><a href="#faq" class="btn" data-aos="fade-down" data-aos-delay="400">Domande frequenti</a></div>
                     </div>
                 </div>
-            </section>
+            </div> 
+        </section>
 
-            <section id="problema" class="bg-purple pt-0">                            
-                <svg preserveAspectRatio="none" width="100%" class="bg-arrow mb-2" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#fff" points="600 100 0 0 1200 0 600 100">
-                </svg>            
-                <div class="container-md pt-4r">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-lg-6 ms-lg-5 ms-sm-normal">
-                            <div class="cardProblema" data-aos="fade-down">
-                                <h3 data-aos="fade-down" data-aos-delay="200">continui a spendere soldi in attività che non funzionano?</h3>
-                                <h1 data-aos="fade-down" data-aos-delay="300">nuova Brand Identity e sito web efficace</h1>
-                                <h4 data-aos="fade-down" data-aos-delay="400">la combinazione specifica per fare la differenza</h4>                            
-                                <div class="text-center">
-                                    <a href="#ilproblema" class="btn" data-aos="fade-down" data-aos-delay="600">ma come posso fare?</a>
-                                </div>
-                            </div>
-                        </div>
+        <section id="faq">
+            <div class="container-md">
+                <div class="row justify-content-center align-items-top">
+                    <div class="title-box">
+                        <h1 data-aos="fade-down">Domande frequenti</h1>
+                        <p data-aos="fade-down" data-aos-delay="100">In quale direzione devo andare adesso?<br>Dipende molto da dove vuoi arrivare.</p>
                     </div>
-                </div> 
-            </section>
-
-            <section id="ilproblema">
-                <div class="container-md">
-                    <div class="row">
-                        <div class="col-lg-6 d-none d-sm-block">
-                            <img src="img/myComputer.png" id="myComputer" data-aos="fade-down" alt="Il mio computer &bull; Deniel Den &bull; Graphic & Web designer">
-                        </div>
-                        <div class="col-lg-6">
-                            <p data-aos="fade-down">A differenza di molte web agency e designer che ti vendono grafiche preconfezionate e dopo l'incasso spariscono, io creo un <strong>design funzionale studiato</strong> su misura che offre il vantaggio di essere unico, ottenendo risultati in breve tempo.</p>
-                            <h1 class="mt-5" data-aos="fade-down" data-aos-delay="200">Il problema</h1>
-                            <p data-aos="fade-down" data-aos-delay="300">Conosci il <a href="https://it.wikipedia.org/wiki/Principio_di_Pareto" target="_blank" rel="noopener noreferrer">principio di Pareto</a>? L'<strong>80% del risultato</strong> è dato solo <strong>dal 20% dello sforzo</strong> e viceversa... ma quel piccolo 20% è una corretta <a href="https://it.wikipedia.org/wiki/Posizionamento" onclick="gtag('event', 'Brand Positioning', { 'event_category': 'Brand Positioning', 'event_action': 'Aperto Link', 'event_label': 'Wikipedia' })" target="_blank" rel="noopener noreferrer">Brand Positioning</a>: devi essere <b>diverso e il primo</b> nel tuo settore dimostrando la tua personalià.<br>La prima impressione è fondamentale, infatti il 91% dei clienti basa la propria scelta cercando e confrontando Brand e siti web su internet: se trova però <b>errori</b>, dati o design vecchi, il <strong>53% abbandonerà</strong>...</p>
-                            <h2 data-aos="fade-down" data-aos-delay="400">e tu hai un logo o un sito con una di queste caratteristiche?</h2>
-                            <p data-aos="fade-down" data-aos-delay="550">Se hai risposto <strong>SI, stai perdendo</strong> molti potenziali <strong>clienti</strong>.</p>
-                            <div class="d-none d-sm-block"><a href="#soluzione" class="btn" data-aos="fade-down" data-aos-delay="700">come risolvo?</a></div>
-                        </div>
-                        <div class="col-12 text-center d-block d-sm-none">
-                            <a href="#soluzione" class="btn" data-aos="fade-down" data-aos-delay="700">come risolvo?</a>
-                            <img class="img-fluid mt-5" src="img/myComputer.png" data-aos="fade-down" alt="Il mio computer &bull; Deniel Den &bull; Graphic & Web designer">
-                        </div>
-                    </div>
-                </div> 
-            </section>
-
-            <section id="soluzione">           
-                <div class="container-md">
-                    <div class="row justify-content-center align-items-top">                        
-                        <h1 class="text-center" data-aos="fade-down">Risolveremo assieme!</h1>
-                        <p class="mb-5 text-center" data-aos="fade-down" data-aos-delay="200">Quando mai in un alveare il miele è stato fatto da una sola ape?</p>
-                        <div class="col-lg-4">
-                            <div class="cardSoluzione" data-aos="fade-down" data-aos-delay="300">
-                                <p>Per non perdere clienti dovremo <strong>catturare la loro attenzione</strong> (di <a href="https://www.gqitalia.it/lifestyle/article/soglia-attenzione-quanto-dura" target="_blank" rel="noopener noreferrer">massimo 8 secondi</a>) e trasmettergli <strong>fiducia e sicurezza</strong>.</p>
-                                <p>Come? Attraverso Brand e Design progettati su misura per il target, <strong>raccontando la tua storia</strong>.</p>
-                                <p>Per garantire la massima qualità <strong>seleziono e seguo max 3</strong> progetti per volta.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="cardSoluzione" data-aos="fade-down" data-aos-delay="400">
-                                <p>Da sempre sono appassionato di <strong>Branding e Codifica</strong> e fin dal 2015 creo giochi di forme e storie che celano <strong>segreti e messaggi</strong>.</p>
-                                <p>Essendo una passione continuo a studiare ogni giorno.</p>
-                                <p>Visto che in <a href="https://www.dailymail.co.uk/news/article-2717454/Facial-features-help-people-decide-trustworthy-blink-eye.html" target="_blank" rel="noopener noreferrer">33 millisecondi</a> decidiamo se fidarci o no, è inevitabile che il tuo <strong>Brand</strong> debba essere al TOP.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">                            
-                            <div class="cardProblema" data-aos="fade-down" data-aos-delay="500">
-                                <h1 data-aos="fade-down" data-aos-delay="500">Vantaggi</h1>
-                                <ul class="mb-0">
-                                    <li data-aos="fade-down" data-aos-delay="550">divergente creatività</li>
-                                    <li data-aos="fade-down" data-aos-delay="600">disegno <strong>Brand unici</strong></li>
-                                    <li data-aos="fade-down" data-aos-delay="650">sviluppo <strong>siti web usabili</strong></li>
-                                    <li data-aos="fade-down" data-aos-delay="700">creo <strong>storie efficaci</strong></li>
-                                    <li data-aos="fade-down" data-aos-delay="750"><strong>semplifico</strong> e ci penso io</li>
-                                    <li data-aos="fade-down" data-aos-delay="800">studio e <strong>ottimizzo</strong></li>
-                                    <li data-aos="fade-down" data-aos-delay="850">seguo <strong>max 3 progetti</strong></li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class="col-12 text-center"><a href="#progetti" class="btn" data-aos="fade-down" data-aos-delay="400">i miei progetti</a></div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="progetti">
-                <div class="container-md">
-                    <h1 class="text-center" data-aos="fade-down">Qualche mio progetto</h1>
-                    <p class="mb-5 text-center" data-aos="fade-down" data-aos-delay="200">Ispirato dall'unicità: Sei pronto a distinguerti dalla folla?</p>
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-md-3 col-sm-12 mb-3">
-                            <img class="img-fluid" src="img/progetti/mamar-3d.jpg" data-aos="fade-down" data-aos-delay="300" alt="MAMAR 3D Brand &bull; Deniel Den &bull; Graphic & Web designer">
-                        </div>                               
-                        <div class="col-md-3 col-sm-12 mb-3">
-                            <img class="img-fluid" src="img/progetti/facelook-3.0.jpg" data-aos="fade-down" data-aos-delay="500" alt="Facelook 3.0 Brand &bull; Deniel Den &bull; Graphic & Web designer">
-                        </div>                               
-                        <div class="col-md-3 col-sm-12 mb-3">
-                            <img class="img-fluid" src="img/progetti/combatcamp.jpg" data-aos="fade-down" data-aos-delay="700" alt="Combat Camp Brand &bull; Deniel Den &bull; Graphic & Web designer">
-                        </div>  
-                        <div class="col-md-3 col-sm-12 mb-3">
-                            <img class="img-fluid" src="img/progetti/aregon.jpg" data-aos="fade-down" data-aos-delay="900" alt="Aregon Sito web &bull; Deniel Den &bull; Graphic & Web designer">
-                        </div>                              
-
-                        <div class="col-12 text-center pt-5"><a href="#recensioni" class="btn mt-0" data-aos="fade-down" data-aos-delay="1200">dicono di me</a></div>
-                    </div>
-                </div>
-            </section>
-            
-            <section id="recensioni" class="bg-purple">
-                <svg preserveAspectRatio="none" width="100%" class="bg-arrow mb-5" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#fff" points="600 100 0 0 1200 0 600 100">
-                </svg>            
-                <div class="container-md">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-12 text-center pb-4">                                
-                            <h1 data-aos="fade-down">Cosa dicono di me</h1>
-                            <p data-aos="fade-down" data-aos-delay="200">Le opinioni non hanno valore, ciò che importa è chi le ha!</p>
-                        </div>
-
-                        <div class="col-lg-5">
-                            <div class="card" data-aos="fade-down" data-aos-delay="300">
-                                <div class="card-body">
-                                    <svg width="65" viewBox="0 0 512 448" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#890052" d="M456,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H464a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H336a26,26,0,0,1-26-26V192A138,138,0,0,1,448,54h8M168,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H176a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H48a26,26,0,0,1-26-26V192A138,138,0,0,1,160,54h8M456,32h-8A160,160,0,0,0,288,192V432a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H384V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24ZM168,32h-8A160,160,0,0,0,0,192V432a48,48,0,0,0,48,48H176a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H96V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24Z" transform="translate(0 -32)"></path>
-                                    </svg>
-                                    <p class="card-text">Inizialmente ero diffidente non conoscendolo ma visto che mi avevano parlato molto bene di lui mi sono voluto fidare. Ero alla ricerca di un grafico che rappresentasse in un logo tutto quello che per me significa la mia attività, il mio evento di punta.<br>Ho trovato una persona molto disponibile e dalle alte competenze e sicuramente oltre a lavorare in modo continuativo ho intenzione di promuovere la sua attività ad amici e conoscenti che sono alla ricerca di un grafico per vari lavori.<br>Per quanto mi riguarda sono molto soddisfatto e sono sicuro sia l'inizio di una lunga collaborazione!</p>
-                                    <div class="star">⭑⭑⭑⭑⭑</div>
-                                    <img class="lazy" data-src="img/recensioni/massimo-mariani.jpg" alt="Massimo Mariani Recensione &bull; Deniel Den &bull; Graphic & Web designer">
-                                    <h3>Massimo Mariani</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="card" data-aos="fade-down" data-aos-delay="500">
-                                <div class="card-body">
-                                    <svg width="65" viewBox="0 0 512 448" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#890052" d="M456,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H464a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H336a26,26,0,0,1-26-26V192A138,138,0,0,1,448,54h8M168,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H176a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H48a26,26,0,0,1-26-26V192A138,138,0,0,1,160,54h8M456,32h-8A160,160,0,0,0,288,192V432a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H384V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24ZM168,32h-8A160,160,0,0,0,0,192V432a48,48,0,0,0,48,48H176a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H96V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24Z" transform="translate(0 -32)"></path>
-                                    </svg>
-                                    <p class="card-text">Non sapevo nemmeno da dove iniziare per rilanciare il mio Brand data la precedente esperienza negativa con un altro designer ma grazie a Deniel ha pensato a tutto lui e ha fatto un lavoro professionale che nemmeno avrei immaginato, lo consiglio vivamente perché esperto e competente in tutte le dinamiche moderne.</p>
-                                    <div class="star">⭑⭑⭑⭑</div>
-                                    <img class="lazy" data-src="img/recensioni/federico-agostini.jpg" alt="Federico Agostini Recensione &bull; Deniel Den &bull; Graphic & Web designer">
-                                    <h3>Federico Agostini</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="card mb-lg-0" data-aos="fade-down" data-aos-delay="300">
-                                <div class="card-body">
-                                    <svg width="65" viewBox="0 0 512 448" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#890052" d="M456,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H464a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H336a26,26,0,0,1-26-26V192A138,138,0,0,1,448,54h8M168,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H176a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H48a26,26,0,0,1-26-26V192A138,138,0,0,1,160,54h8M456,32h-8A160,160,0,0,0,288,192V432a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H384V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24ZM168,32h-8A160,160,0,0,0,0,192V432a48,48,0,0,0,48,48H176a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H96V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24Z" transform="translate(0 -32)"></path>
-                                    </svg>                                
-                                    <p class="card-text">DENIEL professionista super qualificato, in grado di capire le necessità ed esigenze del cliente; paziente e gentile. Lavoro svolto ottimo, ineccepibile.</p>
-                                    <div class="star">⭑⭑⭑⭑⭑</div>
-                                    <img class="lazy" data-src="img/recensioni/alessandra-pavanetto.jpg" alt="Alessandra Pavanetto Recensione &bull; Deniel Den &bull; Graphic & Web designer">
-                                    <h3>Alessandra Pavanetto</h3>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="card mb-0" data-aos="fade-down" data-aos-delay="500">
-                                <div class="card-body">
-                                    <svg width="65" viewBox="0 0 512 448" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#890052" d="M456,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H464a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H336a26,26,0,0,1-26-26V192A138,138,0,0,1,448,54h8M168,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H176a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H48a26,26,0,0,1-26-26V192A138,138,0,0,1,160,54h8M456,32h-8A160,160,0,0,0,288,192V432a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H384V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24ZM168,32h-8A160,160,0,0,0,0,192V432a48,48,0,0,0,48,48H176a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H96V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24Z" transform="translate(0 -32)"></path>
-                                    </svg>
-                                    <p class="card-text">Mi sono trovato benissimo. Super professionale.<br>Si lo consiglierei a un amico, perché preciso con le tempistiche, disponibile e bella creatività.<br>La cosa che mi è piaciuta di più sono state le domande a inizio progetto, la descrizione accurata del logo creato e la descrizione di come usarlo.</p>
-                                    <div class="star">⭑⭑⭑⭑⭑</div>
-                                    <img class="lazy" data-src="img/recensioni/mario-boscatto.jpg" alt="Mario Boscatto Recensione &bull; Deniel Den &bull; Graphic & Web designer">
-                                    <h3>Mario Boscatto</h3>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 text-center pt-5"><a href="#contattami" class="btn mt-0" data-aos="fade-down" data-aos-delay="400">ci sentiamo?</a></div>
-                    </div>
-                </div> 
-            </section>                            
-            <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#890052" points="600 100 0 0 1200 0 600 100">
-            </svg>
-
-            <section id="contattami">
-                <div class="container-md">
-                    <div class="row justify-content-center align-items-top">
-                        <div class="col-12 text-center pb-4">
-                            <h1 data-aos="fade-down">Come posso aiutarti?</h1>
-                            <p data-aos="fade-down" data-aos-delay="300">Pronto a dare vita al tuo progetto? Raccontami la tua idea!</p>
-                        </div>
-                        <div class="col-lg-6 col-md-10">
-                            <div id="ff-compose"  data-aos="fade-down" data-aos-delay="500"></div>
-                            <script async defer src="https://formfacade.com/include/113229842492713506898/form/1FAIpQLSfQNMm8LYrxONDFW3kFOtQpeX-prd1GaxZ8pFgp_VlV-AxNRQ/bootstrap.js?div=ff-compose"></script>
-                        </div>
-                        <div class="col-lg-3 offset-lg-1 col-md-10">
-                            <div class="row justify-content-center align-items-center">
-                                <div class="col-lg-12 col-md-6">
-                                    <a href="https://www.google.it/maps/place/36061+Bassano+del+Grappa+VI/@45.7639414,11.6918746,13z/data=!3m1!4b1!4m5!3m4!1s0x4778da83832fc6bb:0x4a8087d14460dc7f!8m2!3d45.7657286!4d11.7272747" target="_blank" data-aos="fade-down" data-aos-delay="600">
-                                        <div class="card b-purple mb-lg-4 mb-md-0 mt-sm-4r">
-                                            <div class="card-body text-center">
-                                                <svg width="45" title="location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"></path></svg>
-                                                <h2 class="mb-0">Bassano del Grappa</h2>
+                    <div class="col-lg-5">
+                        <div class="accordion" id="faqLeft">
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="200">
+                                <h2 class="accordion-header" id="statistica">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#statistiche" aria-expanded="false" aria-controls="statistiche">
+                                        Benefici e statistiche interessanti
+                                    </button>
+                                </h2>
+                                <div id="statistiche" class="accordion-collapse collapse" aria-labelledby="statistica" data-bs-parent="#faqLeft">
+                                    <div class="accordion-body">
+                                        <div id="benefici" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <h2>Benefici:</h2>
+                                                    <ul>
+                                                        <li>Sono a disposizione per qualsiasi tua idea.</li>
+                                                        <li>Ascolto, capisco e analizzo <strong>le tue esigenze</strong>.</li>
+                                                        <li>Realizzo ciò che hai un mente nel modo giusto.</li>
+                                                        <li>Creo il tuo <strong>Brand personalizzato</strong> su misura.</li>
+                                                        <li>Progetto storie mirate che funzionano.</li>
+                                                        <li>Ti aiuto a utilizzare <strong>design efficaci</strong>.</li>
+                                                        <li>Sviluppo <strong>siti web usabili</strong>.</li>
+                                                        <li>Disegno il tuo <strong>design esclusivo</strong>.</li>
+                                                        <li>Comunicazione chiara ed efficace.</li>
+                                                        <li>Semplifico aiutandoti durante tutto il percorso.</li>
+                                                        <li>Penso a tutto io <strong>senza farti perdere tempo</strong>.</li>
+                                                        <li>Seguo <strong>max 3 progetti per volta</strong>.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2>Statistiche interessanti:</h2>
+                                                    <ul>
+                                                        <li>La nostra attenzione è di <a href="https://www.gqitalia.it/lifestyle/article/soglia-attenzione-quanto-dura" title="Max 8 secondi di attenzione" target="_blank" rel="noopener noreferrer">max 8 secondi</a>.</li>
+                                                        <li>Decidiamo se fidarci o no in soli <a href="https://www.dailymail.co.uk/news/article-2717454/Facial-features-help-people-decide-trustworthy-blink-eye.html" title="Decidiamo in 33 millisecondi" target="_blank" rel="noopener noreferrer">33 ms</a>.</li>
+                                                        <li>I <strong>colori influenzano</strong> le decisioni fra il 62-91%.</li>
+                                                        <li>Il 77% dei clienti acquista in base al <strong>Brand</strong>.</li>
+                                                        <li>Il 93% della gente <strong>giudica la tua credibilità in base al tuo design</strong> (Brand, sito, social, ecc).</li>
+                                                        <li>Il 53% dei clienti abbandona la ricerca e non ti sceglierà se trova <strong>errori, dati o design vecchi</strong>.</li>
+                                                        <li><a href="https://it.wikipedia.org/wiki/Principio_di_Pareto" title="Principio di Pareto" target="_blank" rel="noopener noreferrer">Principio di Pareto</a>:<br>l'<strong>80% del risultato</strong> è dato solo <strong>dal 20% dello sforzo</strong> e viceversa... Quel piccolo 20% è una corretta <a href="https://it.wikipedia.org/wiki/Posizionamento" title="Strategia posizionamento del Brand" target="_blank" rel="noopener noreferrer">Brand Positioning</a>.</li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#benefici" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#benefici" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
-                                <div class="col-lg-12 col-md-6">
-                                    <a href="https://wa.me/393420338407?text=Ciao%20Deniel,%20" onclick="gtag('event', 'Chat Whatsapp', { 'event_category': 'Chat Whatsapp', 'event_action': 'Aperta Chat', 'event_label': 'Whatsapp' })" target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-delay="700">
-                                        <div class="card b-purple mb-0">
-                                            <div class="card-body text-center">
-                                                <svg width="60" title="whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
-                                                <h2 class="mb-0">ti scrivo subito!</h2>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="250">
+                                <h2 class="accordion-header" id="costo-logo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#costoLogo" aria-expanded="false" aria-controls="costoLogo">
+                                        Quanto costa un logo?
+                                    </button>
+                                </h2>
+                                <div id="costoLogo" class="accordion-collapse collapse" aria-labelledby="costo-logo" data-bs-parent="#faqLeft">
+                                    <div class="accordion-body">
+                                        <div id="cost" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <h2>Statistica 2020:</h2>
+                                                    <p>in Italia per un logo il <b>costo min è di 450€ fino a un max di 3000€</b>... Ma si può trovare pure a <b>50€</b>.</p>
+                                                    <p>La differenza è abbissale, ma il motivo c'è.</p>
+                                                    <p>La verità è che ogni progetto è diverso e ha <strong>necessità e obiettivi specifici</strong>: ciò significa che non esiste un "listino prezzi" a meno che non si lavori in serie rendendo tutti i progetti uguali e privi di <strong>valore aggiunto e personalità</strong>.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2>I "loghi" da 50€?</h2>
+                                                    <p>Vengono scaricati da qualche sito stock per <b>5$</b> e al posto di risparmiare <strong>ti faranno perdere</strong>:</p>
+                                                    <ul>
+                                                        <li><strong>tempo</strong></li>
+                                                        <li><strong>la personalità</strong></li>
+                                                        <li><strong>il valore</strong></li>
+                                                        <li><strong>i clienti</strong></li>
+                                                    </ul>
+                                                    <p>comportandone un <strong>danno d’immagine a cui dover rimediare</strong>, che ti costerà molto caro.</p>
+                                                </div>
                                             </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#cost" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#cost" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
                                         </div>
-                                    </a>
-                                </div>                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="300">
+                                <h2 class="accordion-header" id="prezzo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#detPrezzo" aria-expanded="false" aria-controls="detPrezzo">
+                                        Cosa determina il prezzo?
+                                    </button>
+                                </h2>
+                                <div id="detPrezzo" class="accordion-collapse collapse" aria-labelledby="prezzo" data-bs-parent="#faqLeft">
+                                    <div class="accordion-body">
+                                        <div id="price" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <h2 class="mb-0"><span class="numb">1</span>L'esperienza e il valore</h2>
+                                                    <p>che il designer apporterà al Brand.</p>
+                                                    <img src="img/faq/esperienza.svg" alt="Esperienza e valore Designer">
+                                                    <p>Deve differenziarlo e identificarlo per il suo pubblico così da creare fiducia e futuri guadagni.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2><span class="numb">2</span>Chi lo richiede</h2>
+                                                    <img src="img/faq/chi-chiede.svg" alt="Macellaio del paese vs grossa azienda">
+                                                    <p>Non fraintendermi ma c’è differenza tra il macellaio del paese vs una grossa azienda che comporterebbe molte più ricerche e considerazioni.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2><span class="numb">3</span>Il tempo</h2>
+                                                    <img src="img/faq/tempo.svg" alt="Creare un logo richiede molto tempo">
+                                                    <p>Difficoltà del <strong>concept</strong>, ricerche e analisi di mercato, progettazione e bozze da presentare non le fa mica il computer… Creare un logo richiede molto tempo.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2><span class="numb">4</span>L’urgenza</h2>
+                                                    <img src="img/faq/urgenza.svg" alt="Urgenza logo">
+                                                    <p>Come in tutti i lavori, se si ha fretta e si vuole saltare la fila ottenendo la <strong>priorità</strong> su tutto e tutti il prezzo aumenta del 40%.</p>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#price" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#price" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="350">
+                                <h2 class="accordion-header" id="designer-giusto">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#designerGiusto" aria-expanded="false" aria-controls="designerGiusto">
+                                        Come scegliere il designer giusto?
+                                    </button>
+                                </h2>
+                                <div id="designerGiusto" class="accordion-collapse collapse" aria-labelledby="designer-giusto" data-bs-parent="#faqLeft">
+                                    <div class="accordion-body">
+                                        <p><strong>Diffida sempre di designers o agenzie che ti danno subito un prezzo senza porti domande.</strong></p>
+                                        <p>Non esiste un <em>listino prezzi o un preventivo</em> senza aver stilato prima un design <strong>brief</strong> che inquadri dettagliatamente il tuo progetto.</p>
+                                        <p>Evita chi si pone come un <em>semplice "esecutore"</em>: non contraddicendo le tue richieste scorrette non troverà il giusto <strong>equilibrio tra i tuoi gusti, i tuoi obiettivi e la correttezza grafica</strong>.</p>
+                                        <p>Guarda il <a href="#progetti" title="Qualche mio progetto">portfolio</a> del designer, ognuno ha il proprio stile, leggi poi le <a href="#recensioni" title="Cosa dicono di me">recensioni</a> per capire cosa dicono di lui e come lavora.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="accordion" id="faqRight">
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="200">
+                                <h2 class="accordion-header" id="come-funziona">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comeFunziona" aria-expanded="false" aria-controls="comeFunziona">
+                                        Come funziona
+                                    </button>
+                                </h2>
+                                <div id="comeFunziona" class="accordion-collapse collapse" aria-labelledby="come-funziona" data-bs-parent="#faqRight">
+                                    <div class="accordion-body">
+                                        <div id="processo" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <h2><span class="numb">1</span>Briefing</h2>
+                                                    <p>Il <strong>Brief</strong> è un documento contenente domande che dovrai compilare, preferibilmente con me, con tutte le informazioni più chiare e dettagliate possibili su:</p>
+                                                    <ul>
+                                                        <li>descrizione dell'attività</li>
+                                                        <li><a href="https://it.wikipedia.org/wiki/Missione_aziendale" title="Vision e Mission" target="_blank" rel="noopener noreferrer">vision, mission</a>, <strong>valori e obiettivi</strong></li>
+                                                        <li><strong>mercato di riferimento</strong></li>
+                                                        <li>competitor</li>
+                                                        <li>prodotti e servizi</li>
+                                                        <li>spunti e idee da scartare</li>
+                                                        <li>budget e scadenze</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2><span class="numb">2</span>Preventivo</h2>
+                                                    <img src="img/faq/preventivo.svg" alt="Preventivo prezzo finale">
+                                                    <p>Sulla base del tuo brief faccio il preventivo con il <strong>prezzo finale</strong>, il quale non cambierà, a meno che non si aggiungano servizi successivamente. Per procedere chiedo un acconto del 50%.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2><span class="numb">3</span>Ricerca e concept</h2>
+                                                    <p>Per identificare il <strong>concept</strong> e i <strong>punti di forza</strong> su cui costruire il tuo Brand eseguo delle <strong>ricerche di mercato e un'analisi dettagliata dei competitor</strong>.</p>
+                                                    <p>Sulla base del tuo brief e della mia analisi preparo 1 o 2 <strong>proposte ben spiegate</strong>, con delle bozze che ti mostrerano come verrà il progetto finito.</p>
+                                                    <p>Quella scelta si sviluppa o modifica per arrivare al <strong>risultato desiderato</strong>.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2><span class="numb">4</span>Sviluppo e consegna</h2>
+                                                    <img src="img/faq/soddisfatto.svg" alt="Super soddisfatto!">
+                                                    <p>Mentre finisco e perfeziono il progetto preparando i file da consegnarti, tu esegui il saldo del restante 50%, poi ti invio i file e tu sei <strong>super soddisfatto!</strong></p>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#processo" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#processo" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="250">
+                                <h2 class="accordion-header" id="pack-logo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#packLogo" aria-expanded="false" aria-controls="packLogo">
+                                        Cosa comprende il logo e la Brand guideline?
+                                    </button>
+                                </h2>
+                                <div id="packLogo" class="accordion-collapse collapse" aria-labelledby="pack-logo" data-bs-parent="#faqRight">
+                                    <div class="accordion-body">
+                                        <div id="brandGuide" class="carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <h2>Il logo comprende:</h2>
+                                                    <ul>
+                                                        <li>Le <strong>configurazioni</strong> (verticale, orizzontale e pittogramma) con relative <strong>varianti colore</strong> (monocromatico BN, colori per stampa e web) suddivisi per formato di file (.eps .pdf .jpg .png).</li>
+                                                        <li><strong>Payoff</strong>, ovvero lo <strong>slogan</strong>.</li>
+                                                        <li><strong>Font</strong>, i <strong>caratteri tipografici</strong> usati e da usare.</li>
+                                                        <li>Alcune immagini.</li>
+                                                        <li>La <strong>Brand guideline</strong>.</li>
+                                                    </ul>
+                                                    <p>Carta intestata, biglietto da visita, ecc. sono a parte.</p>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <h2>La Brand guideline</h2>
+                                                    <p>O <strong>manuale del Brand</strong>, è un documento di controllo e d'istruzioni d'uso contenente regole sul <strong>marchio</strong> e sull’<strong>immagine coordinata</strong>, redatto per designers o chiunque usi il Brand e i suoi elementi.</p>
+                                                    <p>Spiega nel dettaglio come usare gli elementi grafici evitandone usi impropri, così da crea un'<strong>immagine aziendale ben organizzata e connessa</strong>.</p>
+                                                    <p>A <a href="brand.html" title="Brand guideline: Deniel Den">questo link</a> trovi un esempio con il mio marchio.</p>
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#brandGuide" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#brandGuide" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="300">
+                                <h2 class="accordion-header" id="temp">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tempistiche" aria-expanded="false" aria-controls="tempistiche">
+                                        Tempistiche e quanto tempo ti porterò via
+                                    </button>
+                                </h2>
+                                <div id="tempistiche" class="accordion-collapse collapse" aria-labelledby="temp" data-bs-parent="#faqRight">
+                                    <div class="accordion-body">
+                                        <p>Le tempistiche variano dal periodo e dalla mole di lavoro, generalmente per la creazione di un logo sono necessarie dalle 2 settimane a 1 mese.</p>
+                                        <p>Avrò bisogno del tuo tempo in sole 2 fasi del progetto, a tutto il resto ci penserò io:</p>
+                                        <ul>
+                                            <li>il <strong>design Brief</strong>, da farsi preferibilmente di persona, si compila circa in un’oretta,</li>
+                                            <li>l’approvazione della proposta.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-down" data-aos-delay="350">
+                                <h2 class="accordion-header" id="consulente">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#consulenza" aria-expanded="false" aria-controls="consulenza">
+                                        Consulenza e disponibilità
+                                    </button>
+                                </h2>
+                                <div id="consulenza" class="accordion-collapse collapse" aria-labelledby="consulente" data-bs-parent="#faqRight">
+                                    <div class="accordion-body">
+                                        <p>Per creare il tuo Brand hai bisogno non di qualcuno che, terminato il lavoro incassa e sparisce, ma di un <strong>consulente che segue e ascolta i tuoi bisogni</strong> spiegandoti ciò che non ti è chiaro in modo da <strong>guidarti verso il percorso migliore, anche grazie a dei "no"</strong> di richieste scorrette.</p>
+                                        <p>Finito il progetto avrai la mia consulenza e disponibilità per consigli o delucidazioni di qualsiasi tipo (es. <strong>registrazione del marchio</strong>).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="endiv d-none d-sm-block"><a href="#progetti" class="btn" data-aos="fade-down" data-aos-delay="400">i miei progetti</a></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="progetti">
+            <div class="container-md">
+                <div class="row justify-content-center align-items-center">
+                    <div class="title-box">
+                        <h1 data-aos="fade-down">Qualche mio progetto</h1>
+                        <p data-aos="fade-down" data-aos-delay="100">Ispirato dall'unicità: Sei pronto a distinguerti dalla folla?</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <img src="img/progetti/mamar-3d.jpg" data-aos="fade-down" data-aos-delay="150" alt="MAMAR 3D Brand &bull; Deniel Den &bull; Graphic & Web designer">
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <img src="img/progetti/facelook-3.0.jpg" data-aos="fade-down" data-aos-delay="250" alt="Facelook 3.0 Brand &bull; Deniel Den &bull; Graphic & Web designer">
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <img src="img/progetti/combatcamp.jpg" data-aos="fade-down" data-aos-delay="350" alt="Combat Camp Brand &bull; Deniel Den &bull; Graphic & Web designer">
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <img src="img/progetti/aregon.jpg" data-aos="fade-down" data-aos-delay="400" alt="Aregon Sito web &bull; Deniel Den &bull; Graphic & Web designer">
+                    </div>
+                    <div class="endiv pt-5"><a href="#recensioni" class="btn mt-0" data-aos="fade-down" data-aos-delay="350">dicono di me</a></div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="recensioni">
+            <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#fff" points="600 100 0 0 1200 0 600 100"></svg>
+            <div class="container-md">
+                <div class="row justify-content-center align-items-center">
+                    <div class="title-box pt-fix">
+                        <h1 data-aos="fade-down">Cosa dicono di me</h1>
+                        <p data-aos="fade-down" data-aos-delay="100">Come sarebbe la situazione una volta che il problema fosse risolto?</p>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="card" data-aos="fade-down" data-aos-delay="200">
+                            <div class="card-body">
+                                <p class="card-text">Inizialmente ero diffidente non conoscendolo ma visto che mi avevano parlato molto bene di lui mi sono voluto fidare. Ero alla ricerca di un grafico che rappresentasse in un logo tutto quello che per me significa la mia attività, il mio evento di punta.<br>Ho trovato una persona molto disponibile e dalle alte competenze e sicuramente oltre a lavorare in modo continuativo ho intenzione di promuovere la sua attività ad amici e conoscenti che sono alla ricerca di un grafico per vari lavori.<br>Per quanto mi riguarda sono molto soddisfatto e sono sicuro sia l'inizio di una lunga collaborazione!</p>
+                                <div class="star"><i class="star"></i><i class="star"></i></div>
+                                <img src="img/recensioni/massimo-mariani.jpg" alt="Massimo Mariani Recensione &bull; Deniel Den &bull; Graphic & Web designer">
+                                <h3>Massimo Mariani</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card" data-aos="fade-down" data-aos-delay="300">
+                            <div class="card-body">
+                                <p class="card-text">Non sapevo nemmeno da dove iniziare per rilanciare il mio Brand data la precedente esperienza negativa con un altro designer ma grazie a Deniel ha pensato a tutto lui e ha fatto un lavoro professionale che nemmeno avrei immaginato, lo consiglio vivamente perché esperto e competente in tutte le dinamiche moderne.</p>
+                                <div class="star">⭑⭑⭑⭑</div>
+                                <img src="img/recensioni/federico-agostini.jpg" alt="Federico Agostini Recensione &bull; Deniel Den &bull; Graphic & Web designer">
+                                <h3>Federico Agostini</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mb-lg-0" data-aos="fade-down" data-aos-delay="100">
+                            <div class="card-body">
+                                <p class="card-text">DENIEL professionista super qualificato, in grado di capire le necessità ed esigenze del cliente; paziente e gentile. Lavoro svolto ottimo, ineccepibile.</p>
+                                <div class="star">⭑⭑⭑⭑⭑</div>
+                                <img src="img/recensioni/alessandra-pavanetto.jpg" alt="Alessandra Pavanetto Recensione &bull; Deniel Den &bull; Graphic & Web designer">
+                                <h3>Alessandra Pavanetto</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card mb-0" data-aos="fade-down" data-aos-delay="200">
+                            <div class="card-body">
+                                <p class="card-text">Mi sono trovato benissimo. Super professionale.<br>Si lo consiglierei a un amico, perché preciso con le tempistiche, disponibile e bella creatività.<br>La cosa che mi è piaciuta di più sono state le domande a inizio progetto, la descrizione accurata del logo creato e la descrizione di come usarlo.</p>
+                                <div class="star">⭑⭑⭑⭑⭑</div>
+                                <img src="img/recensioni/mario-boscatto.jpg" alt="Mario Boscatto Recensione &bull; Deniel Den &bull; Graphic & Web designer">
+                                <h3>Mario Boscatto</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="endiv pt-5"><a href="#contattami" class="btn mt-0" data-aos="fade-down" data-aos-delay="250">ci sentiamo?</a></div>
+                </div>
+            </div>
+        </section>
+        <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#890052" points="600 100 0 0 1200 0 600 100"></svg>
+
+        <section id="contattami">
+            <div class="container-md">
+                <div class="row justify-content-center align-items-top">
+                    <div class="title-box">
+                        <h1 data-aos="fade-down">Come posso aiutarti?</h1>
+                        <p data-aos="fade-down" data-aos-delay="100">Pronto a dare vita al tuo progetto? Raccontami la tua idea!</p>
+                    </div>
+                    <div class="col-lg-6 col-md-10">
+                        <div id="ff-compose"  data-aos="fade-down" data-aos-delay="200"></div>
+                        <script async defer src="https://formfacade.com/include/113229842492713506898/form/1FAIpQLSfQNMm8LYrxONDFW3kFOtQpeX-prd1GaxZ8pFgp_VlV-AxNRQ/bootstrap.js?div=ff-compose"></script>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1 col-md-10">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-lg-12 col-md-6">
+                                <a href="https://www.google.it/maps/place/36061+Bassano+del+Grappa+VI/@45.7639414,11.6918746,13z/data=!3m1!4b1!4m5!3m4!1s0x4778da83832fc6bb:0x4a8087d14460dc7f!8m2!3d45.7657286!4d11.7272747" target="_blank" data-aos="fade-down" data-aos-delay="350">
+                                    <div class="card card-location mb-lg-4 mb-md-0 mt-sm-4r">
+                                        <div class="card-body">
+                                            <h2 class="mb-0">Bassano del Grappa</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-md-6">
+                                <a href="https://wa.me/393420338407?text=Ciao%20Deniel,%20" target="_blank" rel="noopener noreferrer" data-aos="fade-down" data-aos-delay="300">
+                                    <div class="card card-whatsapp mb-0">
+                                        <div class="card-body">
+                                            <h2 class="mb-0">Scrivimi ora!</h2>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#890052" points="600 0 0 100 1200 100 600 0">
-        </svg>
-        <footer class="bg-purple text-center">
-            <img src="img/logo-footer.svg" alt="Deniel Den &bull; Graphic & Web designer" height="150">
-            <p class="mt-2">divergente creatività!</p>
-            <ul class="social p-0">
-                <li><a href="https://www.linkedin.com/in/denielden" onclick="gtag('event', 'Linkedin', { 'event_category': 'Linkedin', 'event_action': 'Aperto Linkedin', 'event_label': 'Social' })" target="_blank" rel="noopener noreferrer" title="linkedin">
-                    <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-                </a></li>
-                <li><a href="https://www.behance.net/denielden" onclick="gtag('event', 'Behance', { 'event_category': 'Behance', 'event_action': 'Aperto Behance', 'event_label': 'Social' })" target="_blank" rel="noopener noreferrer" title="portfolio">
-                    <svg width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"></path></svg>
-                </a></li>
-                <li><a href="https://www.instagram.com/denielden_graphicdesigner/" onclick="gtag('event', 'Instagram', { 'event_category': 'Instagram', 'event_action': 'Aperto Instagram', 'event_label': 'Social' })" target="_blank" rel="noopener noreferrer" title="instagram">
-                    <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                </a></li>
-                <li><a href="mailto:deniel.den.1998@gmail.com" onclick="gtag('event', 'Client Email', { 'event_category': 'Client Email', 'event_action': 'Aperta Email', 'event_label': 'mailto' })" title="email">
-                    <svg width="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" transform="translate(0,-952.36218)" d="M39.8,1036.9c-21.8,0-39.8,19.4-39.8,42.9V1337c0,23.4,18.1,42.9,39.8,42.9h432.4c21.8,0,39.8-19.4,39.8-42.9v-257.3c0-23.4-18.1-42.9-39.8-42.9H39.8z M62,1073.6H450l-187.2,175.1c-2.7,2.5-10.8,2.5-13.5,0L62,1073.6z M34.1,1096.2l125.5,117.5L34.1,1322.1V1096.2z M477.9,1096.2v225.9l-125.5-108.3L477.9,1096.2z M185.8,1238.2l41.1,38.3c16.9,15.8,41.4,15.8,58.3,0l41.1-38.3l121.6,104.9H64.2C64.2,1343.1,185.8,1238.2,185.8,1238.2z"></path></svg>
-                </a></li>
-                <li><a href="https://wa.me/393420338407?text=Ciao%20Deniel,%20" onclick="gtag('event', 'Chat Whatsapp', { 'event_category': 'Chat Whatsapp', 'event_action': 'Aperta Chat' })" target="_blank" rel="noopener noreferrer" title="whatsapp">
-                    <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg>
-                </a></li>
-            </ul>
-            <small>DNLDNL98L23A703U &bull; <a href="https://www.iubenda.com/privacy-policy/82057523/legal" target="_blank" class="privacy" rel="noopener noreferrer">Privacy Policy</a></small>
-            <div id="copywrite">&copy; developed by <a href="https://www.behance.net/gallery/114247851/Deniel-Den-Personal-Brand" target="_blank">denie/den</a> <span id="date"></span></div>
-        </footer>
-
-        <a onClick="goTop()" id="ToTop" title="Torna su">
-            <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.16 182.75"><path d="M34.57,250.71l125.8-125.6,125.9,125.6c10,10,42-19.79,32-29.72l-143-143.44c-10-10.14-19.91-10-29.94,0L1.91,221C-8.13,231,24.64,260.75,34.57,250.71Z" transform="translate(-0.02 -70)"></path></svg>
-        </a>
-    </body>
+    <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#890052" points="600 0 0 100 1200 100 600 0"></svg>
+    <footer>
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <img src="img/logo-footer.svg" alt="Deniel Den &bull; Graphic & Web designer" height="135">
+                    <small class="d-block mt-2">divergente creatività!</small>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Graphic & Web designer</strong></p>
+                    <p>Sviluppo Brand su misura, design esclusivi e siti web usabili.</p>
+                        <p>A differenza di molti non uso grafiche preconfezionate.</p>
+                </div>
+                <div class="col-md-2">
+                    <p><strong>Link utili</strong></p>
+                    <nav>
+                        <a class="nav-link" href="#faq">faq</a>
+                        <a class="nav-link" href="#recensioni">recensioni</a>
+                        <a class="nav-link" href="brand.html">my Brand</a>
+                        <a class="nav-link" href="https://www.iubenda.com/privacy-policy/82057523/legal" title="Privacy Policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Contatti & Social</strong></p>
+                    <ul class="social">
+                        <li><a title="Whatsapp" href="https://wa.me/393420338407?text=Ciao%20Deniel,%20" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a title="Gmail" href="mailto:deniel.den.1998@gmail.com"></a></li>
+                        <li><a title="Linkedin" href="https://www.linkedin.com/in/denielden" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a title="Portfolio-Behance" href="https://www.behance.net/denielden" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a title="Instagram" href="https://www.instagram.com/denielden_graphicdesigner" target="_blank" rel="noopener noreferrer"></a></li>
+                    </ul>
+                    <p>Bassano del Grappa</p>
+                    <small>DNLDNL98L23A703U</small>
+                </div>
+            </div>
+        </div>
+        <div class="pt-3">&copy; developed by Deniel Den <span id="date"></span>.</div>
+    </footer>
+    
+    <a href="#contattami" id="btnCta" class="btn">Raccontami la tua idea</a>
+    <a id="toTop" title="Torna su"></a>
+    <!-- js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -329,4 +564,5 @@
             once: true
         });
     </script>
+</body>
 </html>
