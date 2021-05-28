@@ -4,14 +4,11 @@
 *	Version: 1.5.0
 ************************************************** */
 // preload
-function hidePreload() {
-    document.querySelector('#preload').style.display = 'none';
-}
 (() => {
     if (window.addEventListener) {
-        window.addEventListener('load', hidePreload, false);
+        window.addEventListener('load', () => document.querySelector('#preload').style.display = 'none', false);
     } else {
-        window.attachEvent('onload', hidePreload);
+        window.attachEvent('onload', () => document.querySelector('#preload').style.display = 'none');
     }
 })();
 

@@ -276,8 +276,6 @@ img#myComputer {
 .accordion-button:focus { box-shadow: none; }
 
 /* carousel */
-#processo .carousel-item { min-height: 20.5rem; }
-#brandGuide .carousel-item { min-height: 16.8rem; }
 .carousel-item h2 { font-size: 1.02rem; }
 .carousel-item img {
 	max-height: 9rem;

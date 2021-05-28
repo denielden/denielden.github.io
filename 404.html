@@ -5,18 +5,17 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());            
+        gtag('js', new Date());
         gtag('config', 'UA-188588877-1');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Deniel Den">
     <title>Pagina non trovata &bull; Deniel Den &bull; Graphic & Web designer</title>
-    <meta name="theme-color" content="#890052">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon.svg">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" as="style"> 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -25,9 +24,9 @@
     <div id="preload">
         <div class="spinner-grow" role="status"><span class="sr-only"></span></div>
     </div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-purple shadow-sm p-0">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark shadow-sm p-0">
         <div class="container-md">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img src="img/logo.svg" alt="Deniel Den &bull; Graphic & Web designer" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#denNavbar" aria-controls="denNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,11 +34,12 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="denNavbar">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="index.html">home</a>
-                    <a class="nav-link" href="index.html#chiSono">chi sono</a>
-                    <a class="nav-link" href="index.html#faq">faq</a>
-                    <a class="nav-link" href="index.html#recensioni">recensioni</a>
-                    <a class="nav-link" href="index.html#contattami">
+                    <a class="nav-link" href="/">chi sono</a>
+                    <a class="nav-link" href="/#cosafaccio">cosa faccio</a>
+                    <a class="nav-link" href="/#faq">faq</a>
+                    <a class="nav-link" href="/#progetti">progetti</a>
+                    <a class="nav-link" href="/#recensioni">recensioni</a>
+                    <a class="nav-link" href="/#contattami">
                         <button id="btn-nav">contattami</button>
                     </a>
                     <a class="nav-link" href="brand.html">my Brand</a>
@@ -51,29 +51,54 @@
     <main>
         <section id="er404">
             <div class="container-md text-center">
-                <h1 data-aos="fade-down">4<img src="img/favicon.svg" alt="Deniel Den &bull; Graphic & Web designer">4</h1>
-                <h2 data-aos="fade-down" data-aos-delay="200">Pagina non trovata</h2>
-                <p data-aos="fade-down" data-aos-delay="400">Ti sei perso? La pagina che stavi cercando non esiste.</p>
-                <a href="index.html" class="btn" data-aos="fade-down" data-aos-delay="500">Torna all'home</a> 
+                <h1 data-aos="fade-down">4<img src="img/favicon.svg" id="goDown" alt="Deniel Den &bull; Graphic & Web designer">4</h1>
+                <h2 data-aos="fade-down" data-aos-delay="100">Pagina non trovata</h2>
+                <p data-aos="fade-down" data-aos-delay="200">Ti sei perso? La pagina che stavi cercando non esiste.</p>
+                <a href="/" class="btn" data-aos="fade-down" data-aos-delay="300">Torna all'home</a> 
             </div>
         </section>
     </main>
 
     <svg preserveAspectRatio="none" width="100%" class="bg-arrow" viewBox="0 0 1200 100" xmlns="http://www.w3.org/2000/svg"><polygon fill="#890052" points="600 0 0 100 1200 100 600 0"></svg>
     <footer>
-        <img src="img/logo-footer.svg" alt="Deniel Den &bull; Graphic & Web designer" height="150">
-        <p class="mt-2">divergente creatività!</p>
-        <ul class="social">
-            <li><a class="linkedin" href="https://www.linkedin.com/in/denielden" target="_blank" rel="noopener noreferrer"></a></li>
-            <li><a class="behance" href="https://www.behance.net/denielden" target="_blank" rel="noopener noreferrer"></a></li>
-            <li><a class="instagram" href="https://www.instagram.com/denielden_graphicdesigner/" target="_blank" rel="noopener noreferrer"></a></li>
-            <li><a class="email" href="mailto:deniel.den.1998@gmail.com"></a></li>
-            <li><a class="whatsapp" href="https://wa.me/393420338407?text=Ciao%20Deniel,%20" target="_blank" rel="noopener noreferrer"></a></li>
-        </ul>
-        <small>DNLDNL98L23A703U &bull; <a class="privacy" href="https://www.iubenda.com/privacy-policy/82057523/legal" target="_blank" rel="noopener noreferrer">Privacy Policy</a></small>
-        <div>&copy; developed by denie/den <span id="date"></span></div>
+        <div class="container-md">
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <img src="img/logo-footer.svg" alt="Deniel Den &bull; Graphic & Web designer" height="135">
+                    <small class="d-block mt-2">divergente creatività!</small>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Graphic & Web designer</strong></p>
+                    <p>Sviluppo Brand su misura, design esclusivi e siti web usabili.</p>
+                    <p>A differenza di molti non uso grafiche preconfezionate.</p>
+                </div>
+                <div class="col-md-2">
+                    <p><strong>Link utili</strong></p>
+                    <nav>
+                        <a class="nav-link" href="/#faq">faq</a>
+                        <a class="nav-link" href="/#recensioni">recensioni</a>
+                        <a class="nav-link" href="brand.html">my Brand</a>
+                        <a class="nav-link" href="https://www.iubenda.com/privacy-policy/82057523/legal" title="Privacy Policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    </nav>
+                </div>
+                <div class="col-md-3">
+                    <p><strong>Contatti & Social</strong></p>
+                    <ul class="social">
+                        <li><a title="Whatsapp" href="https://wa.me/393420338407?text=Ciao%20Deniel,%20" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a title="Gmail" href="mailto:deniel.den.1998@gmail.com"></a></li>
+                        <li><a title="Linkedin" href="https://www.linkedin.com/in/denielden" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a title="Portfolio-Behance" href="https://www.behance.net/denielden" target="_blank" rel="noopener noreferrer"></a></li>
+                        <li><a title="Instagram" href="https://www.instagram.com/denielden_graphicdesigner" target="_blank" rel="noopener noreferrer"></a></li>
+                    </ul>
+                    <p>Bassano del Grappa</p>
+                    <small>DNLDNL98L23A703U</small>
+                </div>
+            </div>
+        </div>
+        <div class="pt-3">&copy; developed by Deniel Den <span id="date"></span>.</div>
     </footer>
     
+    <a id="toTop" title="Torna su"></a>
     <!-- js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
