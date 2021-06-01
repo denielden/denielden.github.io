@@ -67,9 +67,9 @@ nav, #intro, #recensioni, #concept, #spazziatura, #tipografia, #usi-impropri, fo
 	background-color: var(--purple);
 	color: var(--white);
 }
-#cookiePopup #cookieBox, #btnCta, #progetti img, .accordion-item, .accordion-button, .carousel-control-next-icon, .carousel-control-prev-icon, .card, .card-intro, #versioni, #varianti, input, textarea, .form-control {
+#cookiePopup #cookieBox, .btn, #btnCta, #toTop, #progetti img, .accordion-item, .accordion-button, .carousel-control-next-icon, .carousel-control-prev-icon, .card, .card-intro, #versioni, #varianti, input, textarea, .form-control {
 	border-radius: 1.5rem !important;
-	box-shadow: 0 2px 12px -2px rgba(0, 0, 0, .3);
+	box-shadow: 0 2px 12px -2px rgba(0, 0, 0, .4);
 }
 #progetti img, .accordion-item, .accordion-item:not(:first-of-type), .card, .card-location {
 	border: .3rem solid var(--purple);
@@ -100,11 +100,13 @@ h3 {
 a { 
 	font-size: 1.05rem;
 	color:var(--orange);
-	text-decoration: none;
 	position: relative;
 	overflow: hidden;
 }
-a:hover, a:focus, a:active { color:var(--orange); }
+a:hover, a:focus, a:active {
+	color:var(--orange);
+	text-decoration: none;
+}
 a:after {
 	content: "";
 	position: absolute;
@@ -181,9 +183,8 @@ button[type="button"].navbar-toggler, .navbar-toggler:focus { box-shadow: none; 
 	border-color: var(--orange);
 	padding: .3rem 1rem;
 	margin-top: 2rem;
-	border-radius: 4rem;
 }
-.btn:hover, .btn:active {
+.btn:hover, .btn:active, .btn:focus {
 	color:var(--white);
 	box-shadow: 0 0 0 .25rem rgba(255,146,0,.5);
 }
@@ -209,7 +210,6 @@ button[type="button"].navbar-toggler, .navbar-toggler:focus { box-shadow: none; 
 	background: var(--orange) url('data:image/svg+xml,<svg width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.16 182.75"><path d="M34.57,250.71l125.8-125.6,125.9,125.6c10,10,42-19.79,32-29.72l-143-143.44c-10-10.14-19.91-10-29.94,0L1.91,221C-8.13,231,24.64,260.75,34.57,250.71Z" transform="translate(-0.02 -70)"></path></svg>') 50% no-repeat;
 	display: none;
 	position: fixed;
-	border-radius:100%;
 	bottom: 1.2rem;
 	right: 1.2rem;
 	width: 2rem;
@@ -304,14 +304,6 @@ img#myComputer {
 	padding: 1.5rem;
 }
 .card-intro div:last-child { text-align: right; }
-.card .star {
-	color: var(--orange);
-	font-size: 4rem;
-	line-height: 0;
-	letter-spacing: -.5rem;
-	margin-left: -8px;
-	margin-bottom: .8rem;
-}
 .card img {
 	border-radius: 50%;
 	margin-top: 1rem;
@@ -328,6 +320,8 @@ img#myComputer {
 	float: left;
 }
 .card h2 { font-size: 1.3rem; }
+.rating-5::before, .rating-4::before { content: '\2605\2605\2605\2605\2605'; color: var(--orange); }
+.rating-4::before { content: '\2605\2605\2605\2605'; }
 #recensioni .card-body::before{
 	content: url('data:image/svg+xml,<svg width="65" fill="rgb(137, 0, 82)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 448"><path d="M456,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H464a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H336a26,26,0,0,1-26-26V192A138,138,0,0,1,448,54h8M168,54a1.93,1.93,0,0,1,2,2v48a1.93,1.93,0,0,1-2,2h-8a86.1,86.1,0,0,0-86,86v86H176a26,26,0,0,1,26,26V432a26,26,0,0,1-26,26H48a26,26,0,0,1-26-26V192A138,138,0,0,1,160,54h8M456,32h-8A160,160,0,0,0,288,192V432a48,48,0,0,0,48,48H464a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H384V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24ZM168,32h-8A160,160,0,0,0,0,192V432a48,48,0,0,0,48,48H176a48,48,0,0,0,48-48V304a48,48,0,0,0-48-48H96V192a64.06,64.06,0,0,1,64-64h8a23.94,23.94,0,0,0,24-24V56a23.94,23.94,0,0,0-24-24Z" transform="translate(0 -32)"></path></svg>');
 	display: block;

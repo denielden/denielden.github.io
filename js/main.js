@@ -93,10 +93,30 @@ const cookiesPolicy = {
 cookiesPolicy.start();
 
 //* brandPage
-const myBrand = {
+const brandMain = document.querySelector('#brandMain');
+if(brandMain){
+    brandMain.addEventListener('click', myBrand, true);
+}
 
+function myBrand(evt){
+    var ele = evt.target;
+    switch (ele.id) {
+        case '':
+            break;
+        case '':
+        
+            break;
+        case '':
+        
+            break;
+        default:
+            break;
+    }
+}
+ /*    
     version: () =>  {
-
+        let svg = document.querySelector('.svgClass').contentDocument;
+        svg.querySelector('#pittogramma').style.display = 'none';
     },
     dimesioniMinime: () => {
         let inputSizeLogo = document.getElementById('sizeLogo');
@@ -160,26 +180,8 @@ const myBrand = {
             document.querySelector('#orange').style.color = '#ff9200';
         });
     }
-};
+};*/
 
-    /* 
-    switch (key) {
-        case value:
-            
-            break;
-        case value:
-        
-            break;
-        case value:
-        
-            break;
-        default:
-            break;
-    }
-
-
-};
-*/
 
 // whatappEvent
 let whatappBtn = document.querySelectorAll('[title~="Whatsapp"], .card-whatsapp');
