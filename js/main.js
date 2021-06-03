@@ -101,7 +101,11 @@ if(brandMain){
 function myBrand(evt){
     var ele = evt.target;
     switch (ele.id) {
-        case '':
+        case '#versioni':
+            () =>  {
+                let svg = document.querySelector('.svgVersioni').contentDocument;
+                svg.querySelector('#pittogramma').style.display = 'none';
+            }
             break;
         case '':
         
@@ -113,11 +117,7 @@ function myBrand(evt){
             break;
     }
 }
- /*    
-    version: () =>  {
-        let svg = document.querySelector('.svgClass').contentDocument;
-        svg.querySelector('#pittogramma').style.display = 'none';
-    },
+ /*  
     dimesioniMinime: () => {
         let inputSizeLogo = document.getElementById('sizeLogo');
         let logoSize = document.getElementById('logoSize');
@@ -203,6 +203,18 @@ window.onscroll = () => {
     if (btnCta) {
         (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? btnCta.style.display = 'block' : btnCta.style.display = 'none';
     }
+}
+
+// mapsPopUp
+let mapPopUp = document.querySelector('[data-modal]');
+if(mapPopUp){
+    mapPopUp.addEventListener('click', (e) => {
+        let modal = document.getElementById(mapPopUp.dataset.modal);
+        e.preventDefault();
+        modal.classList.add('open');
+    });
+    let exit = document.querySelector('#mapPopUp');
+    exit.addEventListener('click', () => { exit.classList.remove('open') });
 }
 
 //footer date
