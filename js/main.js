@@ -13,14 +13,16 @@
 })();
 
 // navbar
-let myNavbar = document.querySelector('#denNavbar').getElementsByTagName('a');
-for(let i = 0; i < myNavbar.length; i++) {
-    myNavbar[i].addEventListener('click', () => {
-        var collapseElementList = [].slice.call(document.querySelectorAll('.collapse.navbar-collapse'))
-        var collapseList = collapseElementList.map(function (collapseEl) {
-            return new bootstrap.Collapse(collapseEl)
-        })
-    });
+if (screen.width <= 780) {
+    let myNavbar = document.querySelector('#denNavbar').getElementsByTagName('a');
+    for(let i = 0; i < myNavbar.length; i++) {
+        myNavbar[i].addEventListener('click', () => {
+            var collapseElementList = [].slice.call(document.querySelectorAll('.collapse.navbar-collapse'))
+            var collapseList = collapseElementList.map(function (collapseEl) {
+                return new bootstrap.Collapse(collapseEl)
+            })
+        });
+    }
 }
 
 // cookies
@@ -91,97 +93,6 @@ const cookiesPolicy = {
     showPopup: () => cookiesPolicy.popup.style.display='block'
 };
 cookiesPolicy.start();
-
-//* brandPage
-const brandMain = document.querySelector('#brandMain');
-if(brandMain){
-    brandMain.addEventListener('click', myBrand, true);
-}
-
-function myBrand(evt){
-    var ele = evt.target;
-    switch (ele.id) {
-        case '#versioni':
-            () =>  {
-                let svg = document.querySelector('.svgVersioni').contentDocument;
-                svg.querySelector('#pittogramma').style.display = 'none';
-            }
-            break;
-        case '':
-        
-            break;
-        case '':
-        
-            break;
-        default:
-            break;
-    }
-}
- /*  
-    dimesioniMinime: () => {
-        let inputSizeLogo = document.getElementById('sizeLogo');
-        let logoSize = document.getElementById('logoSize');
-        let sizeOutput = document.getElementById('sizeOutput');
-
-        inputSizeLogo.addEventListener('mousemove', () => {
-            logoSize.style.width = inputSizeLogo.value+'rem';
-            sizeOutput.innerHTML = inputSizeLogo.value;
-        });
-    },
-
-    varianti: () => {
-
-        let varianti = document.querySelector('#varianti');
-        let purple = document.querySelectorAll('.purple');
-        let orange = document.querySelector('#orange');
-
-        document.querySelector('#white').addEventListener('click', e => {
-            document.querySelector('#varianti').style.backgroundColor = '#fff';
-            document.querySelector('#varianti').style.color = '#000';
-            document.querySelector('svg').style.color = '#000';
-            let purple = document.querySelectorAll('.purple');
-            purple.forEach(e => {
-                e.style.color = '#000';
-            });
-            document.querySelector('#orange').style.color = '#000';
-        });
-
-        document.querySelector('#black').addEventListener('click', e => {
-            document.querySelector('#varianti').style.backgroundColor = '#000';
-            document.querySelector('#varianti').style.color = '#fff';
-            document.querySelector('svg').style.color = '#fff';
-            let purple = document.querySelectorAll('.purple');
-            purple.forEach(e => {
-                e.style.color = '#fff';
-            });
-            document.querySelector('#orange').style.color = '#fff';
-
-        });
-
-        document.querySelector('#color').addEventListener('click', e => {
-            document.querySelector('#varianti').style.backgroundColor = '#fff';
-            document.querySelector('#varianti').style.color = '#000';
-            document.querySelector('svg').style.color = '#000';
-            let purple = document.querySelectorAll('.purple');
-            purple.forEach(e => {
-                e.style.color = '#890052';
-            });
-            document.querySelector('#orange').style.color = '#ff9200';
-        });
-
-        document.querySelector('#negative').addEventListener('click', e => {
-            document.querySelector('#varianti').style.backgroundColor = '#000';
-            document.querySelector('#varianti').style.color = '#fff';
-            document.querySelector('svg').style.color = '#fff';
-            let purple = document.querySelectorAll('.purple');
-            purple.forEach(e => {
-                e.style.color = '#fff';
-            });
-            document.querySelector('#orange').style.color = '#ff9200';
-        });
-    }
-};*/
-
 
 // whatappEvent
 let whatappBtn = document.querySelectorAll('[title~="Whatsapp"], .card-whatsapp');
