@@ -190,7 +190,7 @@ button[type="button"].navbar-toggler, .navbar-toggler:focus { box-shadow: none; 
 	box-shadow: 0 0 0 .25rem rgba(255,146,0,.5);
 }
 .btn-check:focus + .btn, .btn:focus { box-shadow: 0 0 0 .25rem rgba(255,146,0,.5); }
-#goDown {		
+#goDown, .erBounce {		
 	font-size: 1.8rem;
 	margin: auto;
 	margin-bottom: -7rem;
