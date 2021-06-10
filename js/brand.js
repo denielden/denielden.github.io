@@ -4,45 +4,52 @@
 *   Project: Brand Page
 *	Version: 1.0.0
 ************************************************** */
-// concept
-let conceptOnOff = document.querySelector('#conceptOnOff');
-conceptOnOff.addEventListener('click', () => {
-    let grid = document.querySelector('#svgSezAurea').contentDocument.querySelector('#grid');
-    grid.classList.toggle('d-none');
-});
+// concept & minSpacing
+const gridOnOff = document.querySelectorAll('#conceptOnOff, #spaceOnOff');
+const gridAurea = document.querySelector('#svgSezAurea').contentDocument.querySelector('#grid');
+const gridSpace = document.querySelector('#svgSpace').contentDocument.querySelector('#grid');
+for (let i=0; i < gridOnOff.length; i++) {
+    gridOnOff[i].addEventListener('click', () => {
+        i==0 ? gridAurea.classList.toggle('d-none') : gridSpace.classList.toggle('d-none');
+    });
+}
 
 // configuation
-let configuation = document.querySelector('#versioni ul');
+const configuation = document.querySelector('#versioni ul');
 const svgVersion = document.querySelector('#svgVersioni').contentDocument;
 configuation.addEventListener('click', version, true);
 function version(e){
     let ele = e.target.id;
-    let v = ['verVerticale', 'verOrizzontale', 'verPittogramma'];
-    console.log(v)
-    v.forEach(vEle => svgVersion.querySelector('#'+vEle).style.display = 'none');
-    svgVersion.querySelector('#'+ele).style.display = 'block';
+    svgVersion.querySelectorAll('g').forEach(e => e.style.display = 'none');
+    switch (ele) {
+        case 'verVerticale':
+        case 'verOrizzontale':
+            svgVersion.querySelector('#verPittogramma').style.display = 'block';
+            svgVersion.querySelector('#'+ele).style.display = 'block';
+            break;
+        case 'verPittogramma':
+            svgVersion.querySelector('#'+ele).style.display = 'block';
+            break;
+        case 'verLogotipo':
+            svgVersion.querySelector('#verOrizzontale').style.display = 'block';
+            break;
+    }
 }
 
 
-// spacing
-let spaceOnOff = document.querySelector('#spaceOnOff');
-spaceOnOff.addEventListener('click', () => {
-    let grid = document.querySelector('#svgSpace').contentDocument.querySelector('#grid');
-    grid.classList.toggle('d-none');
-});
 
-// minimumSize 
-let inputSizeLogo = document.getElementById('sizeLogo');
-let logoSize = document.getElementById('logoSize');
-let sizeOutput = document.getElementById('sizeOutput');
-inputSizeLogo.addEventListener('mousemove', () => {
+
+// minSize 
+const inputSizeLogo = document.querySelector('#sizeLogoBar');
+const logoSize = document.querySelector('#logoSize');
+const sizeOutput = document.querySelector('#sizeOutput');
+inputSizeLogo.addEventListener('input', () => {
     logoSize.style.width = inputSizeLogo.value+'rem';
     sizeOutput.innerHTML = inputSizeLogo.value;
 });
 
-
 // variants
-let variants = document.querySelector('#varianti ul');
+const variants = document.querySelector('#varianti ul');
 variants.addEventListener('click', variant, true);
 function variant(e){
     let ele = e.target.id;
