@@ -6,11 +6,13 @@
 ************************************************** */
 // concept & minSpacing
 const gridOnOff = document.querySelectorAll('#conceptOnOff, #spaceOnOff');
+const labelAction = document.querySelectorAll('.label-action');
 const gridAurea = document.querySelector('#svgSezAurea').contentDocument.querySelector('#grid');
 const gridSpace = document.querySelector('#svgSpace').contentDocument.querySelector('#grid');
 for (let i=0; i < gridOnOff.length; i++) {
     gridOnOff[i].addEventListener('click', () => {
         i==0 ? gridAurea.classList.toggle('d-none') : gridSpace.classList.toggle('d-none');
+        labelAction[i].innerHTML === 'mostra griglia' ? labelAction[i].innerHTML = 'nascondi griglia' : labelAction[i].innerHTML = 'mostra griglia';
     });
 }
 

@@ -63,6 +63,9 @@ section { padding: 4rem 0; }
 .pt-fix { padding-top: 4rem; }
 .endiv { width: 100%; }
 svg.bg-arrow { height: 5rem; margin: -1px 0; }
+#benefit, #progetti div.col-md-10, #varianti ul, #versioni ul, .switch, .metodi-colore, .typo-using, .modal {
+	display: flex;
+}
 nav, #intro, #recensioni, #concept, #spazziatura, #tipografia, #usi-impropri, footer {
 	background-color: var(--purple);
 	color: var(--white);
@@ -145,7 +148,6 @@ strong, b {
 }
 main section:first-child h1, .card-intro h1, #benefit h2 { margin-bottom: 0; }
 #benefit {
-	display: flex;
     justify-content: space-around;
 	list-style: none;
 	padding: 0;
@@ -256,11 +258,17 @@ img#myComputer {
 	position: sticky;
 	top: 10rem;
 }
+#progetti div.col-md-10 {
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 #progetti img {
-	margin-bottom: 1rem;
-	max-width: 100%;
+	margin: 0 1rem 1rem 0;
+	width: calc(100% / 4 - 1rem);
 	height: auto;
 }
+#progetti img:nth-child(4), #progetti img:last-child { margin-right: 0; }
 .step h2 { margin-bottom: 0; }
 .step p {
 	padding-left: 2.5rem;
@@ -344,7 +352,6 @@ img#myComputer {
 /* brandPage */
 #versioni, #varianti { padding: 2rem; }
 #varianti ul, #versioni ul {
-	display: flex;
     align-items: center;
     justify-content: flex-start;
 	flex-wrap: wrap;
@@ -369,11 +376,14 @@ img#myComputer {
 	margin-bottom: 1.2rem;
 }
 .switch {
+	align-items: center;
 	position: relative;
-	display: flex;
 	width: 2rem;
 	height: 6rem;
+	margin-bottom: 1rem;
+	margin-left: calc(50% - 4rem);
 }
+.label-action { margin-left: 2.5rem; }
 .switch input { 
 	opacity: 0;
 	width: 0;
@@ -408,7 +418,6 @@ input:checked + .slider:before {
 	transform: translateY(-2rem);
 }
 .metodi-colore {
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -420,7 +429,6 @@ input:checked + .slider:before {
 	font-size: .9rem;
 	list-style: none;
 }
-.typo-using { display: flex; }
 .typo-element {
     width: 65%;
     word-wrap: break-word;
@@ -449,7 +457,6 @@ input:checked + .slider:before {
     visibility: hidden;
 	-webkit-transition: all .5s ease;
     transition: all .5s ease;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -537,7 +544,12 @@ ul.social li:last-child { padding-right: 0; }
 		margin: 2rem auto -3rem auto;
 	}
 	.step { margin-bottom:2.5rem; }
+	#progetti img {
+		margin: 0 0 1rem 0;
+		width: 100%;
+	}
 	.card h3 { float:none !important; }
+	.mb-sm, #versioni, #varianti { margin-bottom:3rem; }
 	footer { padding: 2rem 0 4rem 0; text-align: center; }
 	footer div { margin-bottom: 1.8rem; }
 	footer div:last-child { margin-bottom: 0; }
