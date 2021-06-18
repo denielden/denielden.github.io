@@ -37,6 +37,9 @@ function version(e){
         case 'verLogotipo':
             svgVersion.querySelector('#verOrizzontale').style.display = 'block';
             break;
+        default:
+            svgVersion.querySelector('#verPittogramma').style.display = 'block';
+            break;
     }
 }
 
