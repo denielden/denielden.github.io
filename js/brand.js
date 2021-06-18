@@ -20,11 +20,11 @@ window.onload = () => {
 
 // configuation
 const configuation = document.querySelector('#versioni ul');
-const svgVersion = document.querySelector('#svgVersioni');
+const svgVersion = document.querySelector('#svgVersioni').contentDocument;
 configuation.addEventListener('click', version, true);
 function version(e){
     let ele = e.target.id;
-    svgVersion.contentDocument.querySelectorAll('g').forEach(e => e.style.display = 'none');
+    svgVersion.querySelectorAll('g').forEach(ge => ge.style.display = 'none');
     switch (ele) {
         case 'verVerticale':
         case 'verOrizzontale':
