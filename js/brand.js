@@ -44,7 +44,7 @@ function version(e){
 const inputSizeLogo = document.querySelector('#sizeLogoBar');
 const logoSize = document.querySelector('#logoSize');
 const sizeOutput = document.querySelector('#sizeOutput');
-inputSizeLogo.addEventListener('input', () => {
+inputSizeLogo.addEventListener('change', () => {
     logoSize.style.width = inputSizeLogo.value+'rem';
     let val = parseInt(inputSizeLogo.value) + 6 + ' mm';
     val == '24 mm' ? val='&infin;' : val;
