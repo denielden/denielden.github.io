@@ -20,7 +20,7 @@ window.onload = () => {
 
 // configuation
 const configuation = document.querySelector('#versioni ul');
-let svgVersion = document.querySelector('#svgVersioni').contentDocument;
+let svgVersion = document.querySelector('#svgVersioni');
 configuation.addEventListener('click', version, true);
 function version(e){
     let ele = e.target.id;
