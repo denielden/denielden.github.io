@@ -20,23 +20,25 @@ window.onload = () => {
 
 // configuation
 const configuation = document.querySelector('#versioni ul');
-const svgVersion = document.querySelector('#svgVersioni').contentDocument;
+const svgVersion = document.querySelector('#svgVersioni');
 configuation.addEventListener('click', version, true);
 function version(e){
     let ele = e.target.id;
-    svgVersion.querySelectorAll('g').forEach(e => e.style.display = 'none');
-    switch (ele) {
-        case 'verVerticale':
-        case 'verOrizzontale':
-            svgVersion.querySelector('#verPittogramma').style.display = 'block';
-            svgVersion.querySelector('#'+ele).style.display = 'block';
-            break;
-        case 'verPittogramma':
-            svgVersion.querySelector('#'+ele).style.display = 'block';
-            break;
-        case 'verLogotipo':
-            svgVersion.querySelector('#verOrizzontale').style.display = 'block';
-            break;
+    window.onload = () => {
+        svgVersion.contentDocument.querySelectorAll('g').forEach(e => e.style.display = 'none');
+        switch (ele) {
+            case 'verVerticale':
+            case 'verOrizzontale':
+                svgVersion.querySelector('#verPittogramma').style.display = 'block';
+                svgVersion.querySelector('#'+ele).style.display = 'block';
+                break;
+            case 'verPittogramma':
+                svgVersion.querySelector('#'+ele).style.display = 'block';
+                break;
+            case 'verLogotipo':
+                svgVersion.querySelector('#verOrizzontale').style.display = 'block';
+                break;
+        }
     }
 }
 
