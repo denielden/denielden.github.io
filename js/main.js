@@ -95,7 +95,7 @@ const cookiesPolicy = {
 cookiesPolicy.start();
 
 // whatappEvent
-let whatappBtn = document.querySelectorAll('[title~="Whatsapp"], .card-whatsapp');
+let whatappBtn = document.querySelectorAll('[title~="Whatsapp"], .card-whatsapp, #wachat');
 for(let i = 0; i < whatappBtn.length; i++) {
     whatappBtn[i].addEventListener('click', () => {
         gtag('event', 'Chat Whatsapp', {'event_category': 'Chat Whatsapp', 'event_action': 'Aperta Chat', 'event_label': 'Whatsapp'});
@@ -104,15 +104,17 @@ for(let i = 0; i < whatappBtn.length; i++) {
 
 // goTop & scroolDisplay
 let toTop = document.querySelector('#toTop');
-let btnCta = document.querySelector('#btnCta');
+let btnCta = document.querySelectorAll('#btnCta, #wachat');
 toTop.addEventListener('click', () => {
     document.body.scrollTop = 0; // for Safari
     document.documentElement.scrollTop = 0;
 });
 window.onscroll = () => {    
     (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? toTop.style.display = 'block' : toTop.style.display = 'none';
-    if (btnCta) {
-        (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? btnCta.style.display = 'block' : btnCta.style.display = 'none';
+    for(let i=0; i < btnCta.length; i++){
+        if(btnCta[i]){
+            (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? btnCta[i].style.display = 'block' : btnCta[i].style.display = 'none';
+        }
     }
 }
 

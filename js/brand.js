@@ -7,13 +7,15 @@
 // concept & minSpacing
 const gridOnOff = document.querySelectorAll('#conceptOnOff, #spaceOnOff');
 const labelAction = document.querySelectorAll('.label-action');
-const gridAurea = document.querySelector('#svgSezAurea').contentDocument.querySelector('#grid');
-const gridSpace = document.querySelector('#svgSpace').contentDocument.querySelector('#grid');
-for (let i=0; i < gridOnOff.length; i++) {
-    gridOnOff[i].addEventListener('click', () => {
-        i==0 ? gridAurea.classList.toggle('d-none') : gridSpace.classList.toggle('d-none');
-        labelAction[i].innerHTML === 'mostra griglia' ? labelAction[i].innerHTML = 'nascondi griglia' : labelAction[i].innerHTML = 'mostra griglia';
-    });
+window.onload = () => {
+    const gridAurea = document.querySelector('#svgSezAurea').contentDocument.querySelector('#grid');
+    const gridSpace = document.querySelector('#svgSpace').contentDocument.querySelector('#grid');
+    for (let i=0; i < gridOnOff.length; i++) {
+        gridOnOff[i].addEventListener('click', () => {
+            i==0 ? gridAurea.classList.toggle('d-none') : gridSpace.classList.toggle('d-none');
+            labelAction[i].innerHTML === 'mostra griglia' ? labelAction[i].innerHTML = 'nascondi griglia' : labelAction[i].innerHTML = 'mostra griglia';
+        });
+    }
 }
 
 // configuation
@@ -38,16 +40,15 @@ function version(e){
     }
 }
 
-
-
-
 // minSize 
 const inputSizeLogo = document.querySelector('#sizeLogoBar');
 const logoSize = document.querySelector('#logoSize');
 const sizeOutput = document.querySelector('#sizeOutput');
 inputSizeLogo.addEventListener('input', () => {
     logoSize.style.width = inputSizeLogo.value+'rem';
-    sizeOutput.innerHTML = inputSizeLogo.value;
+    let val = parseInt(inputSizeLogo.value) + 6 + ' mm';
+    val == '24 mm' ? val='&infin;' : val;
+    sizeOutput.innerHTML = val;
 });
 
 // variants
@@ -58,40 +59,53 @@ function variant(e){
     const boxVarianti = document.querySelector('#varianti');
     const objVarianti = document.querySelector('#svgVarianti').contentDocument;
     const svgVarianti = objVarianti.querySelector('svg');
-    let colorPurple = objVarianti.querySelectorAll('.colorPurple');
-    let colorOrange = objVarianti.querySelector('.colorOrange');
-    
-    let bgBox, txtColor, orangeColor, purpleColor;
+    let classPurple = objVarianti.querySelectorAll('.colorPurple');
+    let classOrange = objVarianti.querySelector('.colorOrange');
+    let bgBox, txtColor, orange, purple;
     switch (ele) {
         case 'varBianco': 
             bgBox = '#ffffff';
-            txtColor = orangeColor = purpleColor = '#000000';
+            txtColor = orange = purple = '#000000';
             break;
         case 'varNero':
             bgBox = '#000000';
-            txtColor = orangeColor = purpleColor = '#ffffff';
+            txtColor = orange = purple = '#ffffff';
             break;
         case 'varColori':
             bgBox = '#ffffff';
             txtColor = '#000000';
-            purpleColor = '#890052';
-            orangeColor = '#ff9200';
+            purple = '#890052';
+            orange = '#ff9200';
             break;
         case 'varNegativo':
             bgBox = '#000000';
-            txtColor = purpleColor = '#ffffff';
-            orangeColor = '#ff9200';
+            txtColor = purple = '#ffffff';
+            orange = '#ff9200';
             break;
         case 'varViola':
             bgBox = '#890052';
-            txtColor = purpleColor = '#ffffff';
-            orangeColor = '#ff9200';
+            txtColor = purple = '#ffffff';
+            orange = '#ff9200';
             break;
     }
-
     boxVarianti.style.backgroundColor = bgBox;
     boxVarianti.style.color = txtColor;
     svgVarianti.style.color = txtColor;
-    colorPurple.forEach(ele => ele.style.color = purpleColor);
-    colorOrange.style.color = orangeColor;
+    classPurple.forEach(ele => ele.style.color = purple);
+    classOrange.style.color = orange;
 }
+
+// typography
+let typoE = document.querySelector('#typoE');
+let gridTypoE = document.querySelector('#gridTypoE');
+function inViewport(ele){
+    let e = ele.getBoundingClientRect();
+    return !(e.top > innerHeight/2 || e.bottom < 0);
+}
+document.addEventListener('scroll', e => {
+    if(inViewport(typoE)){
+        gridTypoE.style.display = 'block';
+    } else {
+        gridTypoE.style.display = 'none';
+    }
+});
