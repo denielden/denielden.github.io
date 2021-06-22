@@ -20,14 +20,14 @@ window.onload = () => {
 
 // configuation
 const configuation = document.querySelector('#versioni ul');
-const svgVersion = document.querySelector('#svgVersioni').contentDocument;
+let svgVersion = document.querySelector('#svgVersioni');
 configuation.addEventListener('click', version, true);
 function version(e){
     let ele = e.target.id;
-    svgVersion.querySelectorAll('g').forEach(e => e.style.display = 'none');
+    svgVersion.querySelectorAll('g').forEach(ge => ge.style.display = 'none');
     switch (ele) {
-        case 'verVerticale':
         case 'verOrizzontale':
+        case 'verVerticale':
             svgVersion.querySelector('#verPittogramma').style.display = 'block';
             svgVersion.querySelector('#'+ele).style.display = 'block';
             break;
@@ -35,6 +35,10 @@ function version(e){
             svgVersion.querySelector('#'+ele).style.display = 'block';
             break;
         case 'verLogotipo':
+            svgVersion.querySelector('#verOrizzontale').style.display = 'block';
+            break;
+        default:
+            svgVersion.querySelector('#verPittogramma').style.display = 'block';
             svgVersion.querySelector('#verOrizzontale').style.display = 'block';
             break;
     }
