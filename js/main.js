@@ -98,7 +98,7 @@ cookiesPolicy.start();
 let whatappBtn = document.querySelectorAll('[title~="Whatsapp"], .card-whatsapp, #wachat');
 for(let i = 0; i < whatappBtn.length; i++) {
     whatappBtn[i].addEventListener('click', () => {
-        gtag('event', 'Chat Whatsapp', {'event_category': 'Chat Whatsapp', 'event_action': 'Aperta Chat', 'event_label': 'Whatsapp'});
+        gtag('event', 'Chat Whatsapp', {'event_category': 'Chat Whatsapp', 'event_action': 'Aperta Chat'});
     });
 }
 
