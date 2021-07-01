@@ -70,7 +70,7 @@ nav, #intro, #recensioni, #concept, #spazziatura, #tipografia, #usi-impropri, fo
 	background-color: var(--purple);
 	color: var(--white);
 }
-#cookiePopup #cookieBox, .btn, #btnCta, #toTop, #progetti img, .accordion-item, .accordion-button, .carousel-control-next-icon, .carousel-control-prev-icon, .card, .card-intro, #versioni, #varianti, #esempimpropri, .applicazioni img, .modal-container, .slider, .slider::before, input, textarea, .form-control {
+#cookiePopup #cookieBox, .btn, #btnCta, #toTop, #progetti img, .accordion-item, .accordion-button, .carousel-control-next-icon, .carousel-control-prev-icon, .card, .card-intro, #versioni, #varianti, #esempimpropri, .applicazioni img, .modal-container, .slider, .slider::before, input, input[type=range]::-webkit-slider-thumb, textarea, .form-control {
 	border-radius: 1.5rem !important;
 	box-shadow: 0 2px 12px -2px rgba(0, 0, 0, .4);
 }
@@ -370,15 +370,23 @@ img#myComputer {
 }
 #varianti ul li, #versioni ul li { padding-right: 1rem; }
 #sizeLogoBar {
+	-webkit-appearance: none;
 	width: 100%;
 	height: .25rem;
 }
-input[type=range]::-webkit-slider-thumb, input[type=range]::-moz-range-thumb, #sizeLogoBar::-webkit-slider-thumb, #sizeLogoBar::-moz-range-thumb {
+input[type=range]::-webkit-slider-thumb {
 	width: .85rem;
 	height: 2rem;
 	background: var(--orange);
 	border: var(--orange);
-	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+}
+input[type=range]::-moz-range-thumb {
+	width: .85rem;
+	height: 2rem;
+	background: var(--orange);
+	border: var(--orange);
 	appearance: none;
 	cursor: pointer;
 }
